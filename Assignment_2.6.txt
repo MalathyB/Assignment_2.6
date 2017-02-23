@@ -1,0 +1,110 @@
+1) Write a program to accepts two numbers from stdin and find all the odd as well as even
+numbers present in between them.
+program:
+import java.util.Scanner;
+
+
+class acad {
+  public static void main(String []args) {
+	  int i, num,n;
+	  Scanner sc=new Scanner(System.in);
+	   System.out.println("Enter the frist number:");
+	    num=sc.nextInt();
+	  
+	    System.out.println("Enter the second number:");
+	    n=sc.nextInt();
+	    
+	    System.out.println("Even numbers in the array are :");
+	    for (i = num; i < n; i++)
+	    {
+	        if (i % 2 == 0)
+	        {
+	           System.out.println(i);
+	        }
+	    }
+	   System.out.println("Odd numbers in the array are :");
+	    for (i = num; i < n; i++)
+	    {
+	        if (i % 2 != 0)
+	        {
+	          System.out.println(i);
+	        }
+	    }
+	    sc.close();
+  } 
+}
+
+
+output:
+Enter the frist number:
+2
+Enter the second number:
+9
+Even numbers in the array are :
+2
+4
+6
+8
+Odd numbers in the array are :
+3
+5
+7
+
+2) Joe is scared to go to school. When her dad asked the reason, joe said she is unable to
+complete the task given by her teacher. The task was to find the “first 10 multiples” of the
+number entered from stdin.
+
+program:
+
+import java.util.Scanner;
+
+
+class acad {
+  public static void main(String []args) {
+	  int i,n;
+	  Scanner sc=new Scanner(System.in);
+	   System.out.println("Enter the input:");
+	   n=sc.nextInt();
+	   for(i=1;i<=10;i++){
+		   System.out.println(n+" * "+i+" = "+(n*i));
+	   }
+	    sc.close();
+  } 
+}
+output:
+
+Enter the input:
+2
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+2 * 5 = 10
+2 * 6 = 12
+2 * 7 = 14
+2 * 8 = 16
+2 * 9 = 18
+2 * 10 = 20
+
+3) Write a program consisting method sum() and demonstrate the concept of method
+overloading using this method.
+program:
+
+class acad {
+  public static void main(String []args) {
+	  System.out.println(Adder.sum(11,11));  
+	  System.out.println(Adder.sum(10,15,10));  
+  } 
+}
+class Adder{  
+static int sum(int a,int b){
+	return a+b;
+	}  
+static int sum(int a,int b,int c){
+	return a+b+c;
+	}  
+}  
+
+output:
+22
+35
